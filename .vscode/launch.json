@@ -1,0 +1,36 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "LenkaIA 2_86042c91"
+        },
+        {
+            "type": "java",
+            "name": "CompareImages",
+            "request": "launch",
+            "mainClass": "CompareImages",
+            "projectName": "LenkaIA_65a23c3f"
+        },
+        {
+            "type": "java",
+            "name": "SearchByImagePlain",
+            "request": "launch",
+            "mainClass": "SearchByImage",
+            "projectName": "LenkaIA_65a23c3f"
+        },
+        {
+            "type": "java",
+            "name": "MainFX",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "LenkaIA 2_86042c91",
+            "javaExec": "C:/Program Files/Java/jdk-24/bin/java.exe",
+            "vmArgs": "--module-path \"C:/Users/lucy_/Documents/Lenka/Computing/javafx-sdk-24.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+        }
+    ]
+}
