@@ -1,6 +1,4 @@
 // enter "mvn javafx:run" in the terminal to run
-// image used: https://www.shutterstock.com/search/cute-pig-icon
-// gif used: https://tenor.com/search/running-pig-gifs
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
