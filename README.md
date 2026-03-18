@@ -1,18 +1,47 @@
-## Getting Started
+# LenkaIA 2 (JavaFX)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This is a JavaFX application. The entry point is `Main` (see `src/Main.java`).
 
-## Folder Structure
+## Prerequisites
 
-The workspace contains two folders by default, where:
+- Java Development Kit (JDK) **24** (the project is compiled with `--release 24`)
+- Apache Maven (`mvn`)
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+To confirm your setup:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+```sh
+java -version
+mvn -version
+```
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Run (recommended)
 
-## Dependency Management
+From the project root:
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+```sh
+mvn javafx:run
+```
+
+If you want a clean rebuild first:
+
+```sh
+mvn clean javafx:run
+```
+
+## Build (compile only)
+
+```sh
+mvn clean compile
+```
+
+Compiled classes will be in `target/classes`.
+
+## Run the prebuilt JAR (optional)
+
+There is a `lenkaia.jar` in the repo root. You can try:
+
+```sh
+java -jar lenkaia.jar
+```
+
+If this fails due to missing JavaFX runtime/native libraries, use the Maven run command (`mvn javafx:run`) instead.
